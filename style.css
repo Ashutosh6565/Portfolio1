@@ -38,12 +38,64 @@ html,body{
 }
 #heading h1{
     margin-left: 40px;
-    line-height: 0.8;
+    line-height: 0.9;
     font-size: 11vw;
     text-transform: capitalize;
     font-weight: 900;
     opacity: .68;
+    text-transform: uppercase;
 }
 #heading #secondh1{
     margin-left: 100px;
+    
+}
+.blocktext{
+    width: fit-content;
+   
+}
+.blocktext h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+#chhotiheadings{
+    margin-top: 100px;
+    padding-right: 40px;
+
+
+}
+#chhotiheadings h5{
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: .6vw;
+    font-size: 1.4vw;
+}
+
+#herofooter{
+    padding: 0 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#herofooter a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+#herofooter .circle{
+    background-color: rosybrown;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#herofooter #iconset{
+    display: flex;
+    gap: 6px;
 }
