@@ -11,9 +11,10 @@ html,body{
 }
 #main{
     width: 100%;
-    height: auto;
+    background-color: black;
 }
 #hero{
+    position: relative;
     width: 100%;
     height: 100vh;
     background-color: black;
@@ -34,7 +35,7 @@ html,body{
     font-size: 18px;
 }
 #heading{
-    margin-top: 50px;
+    margin-top: 120px;
 }
 #heading h1{
     margin-left: 40px;
@@ -59,7 +60,8 @@ html,body{
     font-size: 16px;
 }
 #chhotiheadings{
-    margin-top: 100px;
+    
+    margin-top: 110px;
     padding-right: 40px;
 
 
@@ -67,8 +69,9 @@ html,body{
 #chhotiheadings h5{
     text-align: right;
     text-transform: uppercase;
-    margin-top: .6vw;
-    font-size: 1.4vw;
+    margin-top: .7vw;
+    font-size: 1.1vw;
+    opacity: 0.9;
 }
 
 #herofooter{
@@ -99,3 +102,112 @@ html,body{
     display: flex;
     gap: 6px;
 }
+
+#second{
+    padding-right: 10vw;
+    padding-top: 90px;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: black;
+}
+.elem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
+    width: 100%;
+    padding: 4vw 3vw;
+    border-top: 1px solid #888;
+    
+}
+.elem h1{
+    text-transform: uppercase;
+    font-size: 7vw;
+    opacity: .7;
+}
+.elemlast{
+    border-bottom: 1px solid #888;
+}
+.elem img{
+    z-index: 999;
+    height: 130%;
+    /* opacity: 0; */
+    position: absolute;
+    display: none;
+}
+#about{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 50px;
+    width: 100%;
+    padding: 10vw 5vw;
+    background-color: black;
+    padding-left: 40vw;
+}
+#textabout{
+    width: 25rem;
+   
+}
+#textabout h5{
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+#textabout p{
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+#about img{
+    height: 200px;
+}
+#textabout a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 22px;
+    border-radius: 100px;
+    font-size: 10px;
+}
+#subscribe{
+    
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    padding-bottom: 7vw;
+}
+#subscribe h5 {
+    text-transform: uppercase;
+    opacity: .6;
+}
+#subscribe h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#footer{
+    background-color: black;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+#footerleft{
+    display: flex;
+    gap: 20px;
+}
+#footerright{
+    display: flex;
+    gap: 30px;
+}
+#footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
