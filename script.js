@@ -68,3 +68,49 @@ function circleMouseFollower( xscale, yscale) {
 circleMouseFollower(dets);
 firstPageAnim();
 circleChaptaKaro();
+
+//in the second div select all the three element after that use mousemove over them and also ckeck mouse kha pur that means check the postion of x and y and then show imge and move the image and while moving rotate it and when the mouse move an the same way the roation also become fast with the movement
+// document.querySelectorAll(".elem").forEach(function(elem){
+//     var rotate = 0;
+//     var diffrot = 0;
+//     elem.addEventListener("mousemove" ,function(details){
+//         //dets = details where you get acces to x and y and others thinsgs
+//         var diff = details.clientY - elem.getBoundingClientRect().top; 
+//         diffrot = details.clientX - rotate;
+//         rotate = dets.clientX;
+//         console.log(details)
+       
+//         gsap.to(elem.querySelector("img"),{
+//             opacity:1,
+//             ease: Power1,
+//             top: diff,
+//             left: details.clientX,
+//             rotate:  gsap.utils.clamp(-20,20,diffrot)
+//         })
+//     })
+// })
+document.querySelectorAll(".elem").forEach(function (elem) {
+    var rotate = 0;
+    var diffrot = 0;
+  
+    elem.addEventListener("mouseleave", function (dets) {
+      gsap.to(elem.querySelector("img"), {
+        opacity: 0,
+        ease: Power3,
+        duration: 0.5,
+      });
+    });
+  
+    elem.addEventListener("mousemove", function (dets) {
+      var diff = dets.clientY - elem.getBoundingClientRect().top;
+      diffrot = dets.clientX - rotate;
+      rotate = dets.clientX;
+      gsap.to(elem.querySelector("img"), {
+        opacity: 1,
+        ease: Power3,
+        top: diff,
+        left: dets.clientX,
+        rotate: gsap.utils.clamp(-20, 20, diffrot * 0.5),
+      });
+    });
+  });
